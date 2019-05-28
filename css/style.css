@@ -1,0 +1,270 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+   
+
+.landing-page{
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/shape2.png);
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+
+
+.head {
+    background-color: #1f3bca;
+    box-shadow: 0px 4px 20px 0px #1a193e;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.title {
+    font-family: 'Righteous', cursive;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.navlinks li {
+    display: inline-block;
+    position: relative;    
+    color: white;
+    margin-right: 15px;
+    padding: 25px 10px;
+    font-size: 18px;
+
+    font-family: 'Varela Round', sans-serif;
+}
+.navlinks a{
+    color: white;
+    text-decoration: none;
+}
+.navlinks a:hover{
+    color: white;
+    text-decoration: none;
+}
+.navlinks li::before{
+    content:'';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 25%;
+    border-radius: 3px;
+    left: 0;
+    opacity: .7;
+    transition: .4s;
+}
+.navlinks li::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    border-radius: 5px;
+    opacity: .7;
+    transition: .4s;
+}
+.navlinks li:hover::before{
+    width: 100%;
+    transition: .4s;
+}
+.navlinks li:hover::after{
+    width: 100%;
+    transition: .4s;
+}
+.mediton{
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+.mediton h1{
+    font-size: 60px;
+}
+.mediton h3{
+    font-size: 35px;
+    left: 15%;  
+}
+.mediton p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.features{
+    overflow: auto;
+    width: 100%;
+    background-image: url(../images/shape3.png);
+    background-size: cover;
+    background-position: top;
+    font-family: 'Varela Round', sans-serif;
+}
+.underline{
+    width: 150px;
+    height: 5px;
+    background-color:#1a193e; 
+    margin: auto;
+    position: relative;
+}
+.underline::before{
+   content: '';
+    height: 5px;
+    width:6px;
+    background-color: #1a193e;
+    position: absolute;
+    right: -10px;
+}
+.underline::after{
+       content: '';
+    height: 5px;
+    width:6px;
+    background-color: #1a193e;
+    position: absolute;
+    right: -20px;
+}
+
+.feature-inner{
+    padding: 20px;
+    width:100%;
+    background-color: #f3f3f3;
+    margin: auto;
+    border-radius: 5%;
+    transition: .4s;
+    cursor: pointer;
+}
+.feature-inner:hover{
+    transform: translateY(-20px);
+    transition: .4s;
+    border-top: 4px solid #1f3bca;
+}
+.feature-inner:hover > h3{
+    color: #1f3bca;
+}
+.feature-inner i{
+    font-size: 35px;
+}
+.feature-inner a{
+   color: black;
+    padding: 15px 40px;
+    border:1px solid #1f3bca;
+    border-radius: 5px;
+    transition: .4s;
+    font-weight: 700;
+}
+.feature-inner a:hover{
+    transition: .4s;
+    background-color: #1f3bca;
+    color: white;
+    text-decoration: none;
+}
+.text-gradient{
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: -webkit-linear-gradient(left, #fc4e1b 0%, #f6b533 100%);
+}
+    .aside{
+        display: none;
+    }
+    @media only screen  and (min-width : 1824px) {
+        .asidelist{
+            display: none;
+        }
+}
+
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .navlinks li{
+        font-size: 16px;
+        margin-right: 0;
+    }
+
+    .title h2{
+        font-size: 24px;
+    }
+    .navcol{
+        padding: 0!important;
+    }
+    
+    .aside{
+        display: none;
+    }
+    .asidelist{
+        display: none;
+    }
+ 
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .aside{
+        display: block;
+    }
+    .asidelinks{
+        display: none;
+    }
+    .navcol{
+        display: none;
+    }
+    .sidebar{
+        width: 50px;
+        float: right;
+        height: 50px;
+        text-align:center;
+        line-height: 50px;
+        font-size: 23px;
+        color: white;
+    }
+    
+    .title h2{
+        font-size: 24px;
+    }
+    
+    .asidelist ul{
+        text-align: center;
+        list-style: none;
+       
+    }
+    .asidelinks{
+        transition: .5s;
+        overflow: auto;
+      
+    }
+    .asidelist ul li{
+        padding: 12px 0;
+        border-top: 1px solid white;
+    }
+    .bordnone{
+        border:none!important;
+    }
+    .asidelist ul li a{
+        
+        color: white;
+    }
+    .asidelist ul li a:hover{ 
+        text-decoration: none;
+    }
+    .mediton{
+        padding: 0!important;
+    }
+    .mediton h3{
+        font-size: 24px;
+    }
+    .mediton h1{
+        font-size: 28px;
+    }
+    .mediton p{
+        font-size: 15px;
+    }
+    
+    
+}
+

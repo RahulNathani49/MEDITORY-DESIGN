@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid head">
+        <div class="row align-items-center justify-content-center">
+
+            <div class="col-4 col-md-4 navcol">
+                <ul class="m-0 navlinks p-0 float-right">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">POSTS</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-3 title">
+                <h2 class="m-0 text-center">Meditory</h2>
+            </div>
+            <div class="col-6 aside">
+                <div class="sidebar">
+                    <i class="fas fa-bars" onclick="toggle(this)"></i>
+                </div>
+            </div>
+            <div class="col-12 asidelist d-lg-none d-sm-block d-md-none">
+
+                <ul class="m-0 p-0 asidelinks" id="aside">
+                    <li class="bordnone"><a href="#">HOME</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">POSTS</a></li>
+                    <li><a href="#">INVENTORY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+            <div class="col-4 col-md-5 navcol">
+                <ul class="m-0 p-0 navlinks nvr ">
+                    <li><a href="#">INVENTORY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid landing-page h-100">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md-12 mediton">
+                    <h3>
+                        Meditons
+                    </h3>
+                    <h1 class="py-3">
+                        A Medicine Inventory
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam unde enim neque laudantium magni atque! Quo aliquam ut labore pariatur odio doloremque fugiat quam deserunt rem veniam nemo nostrum, dolorem sit consectetur molestiae, officia ullam delectus sed commodi. Reprehenderit laborum modi ea, qui reiciendis impedit ut dignissimos maiores saepe temporibus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <h3 class="text-center  mt-5">FEATURES</h3>
+                    <div class="underline"></div>
+                    <p class="text-center py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo odio quas, quibusdam saepe, magni similique optio earum deserunt quos at.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-inner text-center py-5">
+                        <i class="fas fa-user-shield text-gradient"></i>
+                        <h3 class="py-3">Admin DashBoard</h3>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus quasi architecto neque tempora reiciendis, dolores perspiciatis accusamus adipisci dolore.</p>
+                        <a href="#">LOGIN</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-inner py-5 text-center">
+                        <i class="fas fa-boxes text-gradient"></i>
+                        <h3 class="py-3">Inventory</h3>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus quasi architecto neque tempora reiciendis, dolores perspiciatis accusamus adipisci dolore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="feature-inner py-5 text-center">
+                        <i class="far fa-credit-card text-gradient"></i>
+                        <h3 class="py-3">Payments</h3>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus quasi architecto neque tempora reiciendis, dolores perspiciatis accusamus adipisci dolore.</p>
+                        <a href="#">CHECK OUT</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggle(x) {
+            if (document.getElementById("aside").style.display == "none") {
+                document.getElementById("aside").style.display = "block";
+                x.setAttribute("class", "fas fa-times");
+
+            } else {
+                document.getElementById("aside").style.display = "none";
+                x.setAttribute("class", "fas fa-bars");
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
